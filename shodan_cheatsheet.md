@@ -2,21 +2,21 @@
 
 Search Qualifiers:
 
-```city: find devices in a particular city.```
+```city:``` find devices in a particular city.
 
-```country: find devices in a particular country.```
+```country:``` find devices in a particular country.
 
-```geo: search for specific GPS coordinates.```
+```geo:``` search for specific GPS coordinates.
 
-```hostname: find values that match the hostname.```
+```hostname:``` find values that match the hostname.
 
-```product: search the name of the software or product identified in the banner.```
+```product:``` search the name of the software or product identified in the banner.
 
-```os: search based on operating system.```
+```os:``` search based on operating system.
 
-```port: find particular ports that are open.```
+```port:``` find particular ports that are open.
 
-```before/after: find results within a timeframe.```
+```before/after:``` find results within a timeframe.
 
 ##
 
