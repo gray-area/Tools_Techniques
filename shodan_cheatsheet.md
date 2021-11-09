@@ -32,6 +32,7 @@ Example Searches:
 
 • Locate default passwords: ```"password is" OR "default is" -"required"```
 
+
 Misconfigured WordPress Sites:
 
 The wp-config.php if accessed can give out the database credentials.
