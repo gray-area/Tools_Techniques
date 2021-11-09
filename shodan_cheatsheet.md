@@ -32,9 +32,5 @@ Example Searches:
 
 • Locate default passwords: ```"password is" OR "default is" -"required"```
 
-
-Misconfigured WordPress Sites:
-
+• Locate misconfigured WordPress sites: ```http.html:"* The wp-config.php creation script uses this file"```
 The wp-config.php if accessed can give out the database credentials.
-
-```http.html:"* The wp-config.php creation script uses this file"```
