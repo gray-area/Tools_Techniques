@@ -31,3 +31,9 @@ Example Searches:
 • Locate Internet accessible OPC UA Discovery Server: ```product:”OPC” port:”4840”```
 
 • Locate default passwords: ```"password is" OR "default is" -"required"```
+
+Misconfigured WordPress Sites:
+
+The wp-config.php if accessed can give out the database credentials.
+
+```http.html:"* The wp-config.php creation script uses this file"```
