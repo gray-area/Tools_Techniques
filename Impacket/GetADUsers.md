@@ -1,4 +1,4 @@
-## GetADUsers
+## GetADUsers.py
 
 You will need at least one valid USERNAME and PASSWORD to use this. 
 
