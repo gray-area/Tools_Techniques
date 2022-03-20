@@ -1,5 +1,5 @@
 For Help
-``#: hashcat -h``
+``hashcat -h``
 
 
 ``hashcat -w 3 -a 0 -m 1000 /tmp/hashes /tmp/rockyou.txt``
