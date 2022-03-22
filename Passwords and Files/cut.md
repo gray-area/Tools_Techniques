@@ -29,3 +29,13 @@ Example:
 `` cut -c 10- something.txt``
 
 The ``10-`` means that cut will extract everything from character 10 to the end of the line, for each line in ``something.txt``
+
+## Cut Based on a Delimiter
+
+``cut -d[delimiter] [file]``
+
+Example
+
+``cat something.txt | cut -d ' ' -f 2``
+
+The above command opens and reads ``something.txt`` then pipes it to the ``cut`` command. ``cut`` then looks for the delimeter of a single space ``' '`` and is looking for field 2 ``-f 2``.
