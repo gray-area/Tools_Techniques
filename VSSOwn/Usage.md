@@ -20,3 +20,5 @@ ntds.dit file.
 Once we have these, we can stop the VSSOwn tool
 
 ``cscript vssown.vbs /stop``
+
+It is recommended, after this is complete, use the tool ``secretsdump.py`` from Impacket to extract the hashes.
