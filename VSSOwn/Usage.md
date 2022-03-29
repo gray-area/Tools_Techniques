@@ -16,3 +16,7 @@ VSSOwn is used to create a copy of the ntds.dit file.
 
 From the above commands, we copied the ntds, SYSTEM and SAM. The SYSTEM and SAM portions will be needed becaue they contain the decryption keys needed to extract the hashes from the 
 ntds.dit file. 
+
+Once we have these, we can stop the VSSOwn tool
+
+``cscript vssown.vbs /stop``
