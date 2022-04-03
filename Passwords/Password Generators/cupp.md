@@ -12,3 +12,6 @@ For Interactive mode:
 
 ``user@off$  python3 cupp.py -i``
 
+For pre-created wordlists:
+
+``user@thm$  python3 cupp.py -l``
