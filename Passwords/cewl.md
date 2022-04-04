@@ -14,6 +14,7 @@ Tools such as Cewl can be used to effectively crawl a website and extract string
 
 ``http://offensive.labs`` is the URL that will be used
 
+--------
 cewl can also be used to extract metadata from files.
 
 ``fab-cewl [OPTION] ... filename/list``
