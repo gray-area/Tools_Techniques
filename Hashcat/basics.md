@@ -21,4 +21,4 @@ There are 3 tools that are commonly used to determine a hash type:
 
 Mode ``0`` is the most common method used.
 
-Running hashcat with the ``--show`` option will show the cracked password, if the hash has been cracked. 
+Running hashcat with the ``--show`` option, __AFTER__ the hash has been cracked, will show the cracked password, if the hash has been cracked. 
