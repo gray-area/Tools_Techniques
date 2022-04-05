@@ -17,3 +17,11 @@ For Help
 ``/tmp/rockyou.txt`` Specify password dictionary
 
 ``--show`` shows the value of the hashed password if it has been cracked. 
+
+<br>
+
+If you are using zsh on Kali, you will need to escape the ``?`` when adding to the hashcat options by using a ``\``.
+
+For a 4 digit pin, this would look like:
+
+``hashcat -a 3 -m 0 hash.txt \?d\?d\?d\?d``
