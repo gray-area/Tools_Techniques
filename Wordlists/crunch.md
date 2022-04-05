@@ -1,4 +1,4 @@
-## crunch
+# crunch
 
 ``crunch`` is one of many powerful tools for creating an offline wordlist.
 
