@@ -4,9 +4,13 @@
 
 ``/etc/john/john.conf`` and/or ``/usr/share/john/john.conf``
 
+## Options
+
+Placeholder
+
 ## Rules
 
-### Types of Rule modifications
+### Types of password list modifications
 
 ```
  * Border mutation - commonly used combinations of digits and special symbols can be added at the end or at the beginning, or both
@@ -31,3 +35,6 @@ To create a new rule, you need to do the following:
     [List.Rules:MyRule]
     $[0-9]$[0-9]
     ```
+## Examples
+
+`` ``
