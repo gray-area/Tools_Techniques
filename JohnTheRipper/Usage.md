@@ -6,7 +6,7 @@
 
 ## Options
 
-Placeholder
+``--list-formats`` This is used to show a list of all the formats that are supported by JtR
 
 ## Rules
 
