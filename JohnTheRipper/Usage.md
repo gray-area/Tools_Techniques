@@ -8,7 +8,7 @@
 
 ``--list-formats`` This is used to show a list of all the formats that are supported by JtR
 
-## Rules
+## Mutations
 
 ### Types of password list mutations
 
@@ -25,6 +25,7 @@
 | Duplicate mutation | some characters are duplicated |
 | Delimiter mutation | delimiters are added between characters |
 
+## Rules
 
 To create a new rule, you need to do the following:
 
