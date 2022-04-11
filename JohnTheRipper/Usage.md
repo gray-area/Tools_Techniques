@@ -10,7 +10,7 @@
 
 ## Rules
 
-### Types of password list modifications
+### Types of password list mutations
 
 | Type | Explanation|
 |------|:----------:|
