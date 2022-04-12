@@ -14,7 +14,7 @@ You will then need to correlate that to the JtR hash type. In order to see the J
 
 Typically, you will need to tell John that you are dealing wth a typical hash type by prefixing the hash type with ``raw-``. 
 
-For example: ``--format=raw-md5crypt``.
+For example: ``--format=raw-md5``.
 
 It is easier to search JtR for the hash type rather than look through them all. This can be done by issung the following command, for example:
 
