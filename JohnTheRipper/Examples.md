@@ -20,3 +20,14 @@ It is easier to search JtR for the hash type rather than look through them all. 
 
 ``john --list=formats | grep -iF "md5"``
 
+## /etc/passwd and /etc/shadow
+
+The hash is in SHA512 and the files have been saved locally as ``passwd`` and ``shadow``.
+
+First, combine the ``/etc/passwd`` and the ``/etc/shadow`` by using the builtin command ``unshadow``.
+
+``unshadow passwd shadow > unshadowed.txt``
+
+Then run John on the unshadowed file
+
+``john --wordlist=/usr/share/wordlists/rockyou.txt --format=sha512crypt unshadowed.txt``
