@@ -34,6 +34,13 @@ Use previously compromised credentials across the network:
 hydra -C creds.txt -M windows-hosts.txt smb2
 ```
 
+## Domain Usage
+
+For domain users, target the domain. In order for this attack to work, the domain MUST be specified and the curly braces ``{}`` are required. Additionally, eventhough it is a Domain the option requires ``workgroup:{DOMAINGOESHERE}``
+
+``hydra -C creds.txt -m dc01 smb2 -m workgroup:{DOMAINGOESHERE}``
+
+
 ## Supported Protocols
 
 ```
