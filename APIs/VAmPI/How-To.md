@@ -18,7 +18,7 @@ A quick rundown of the actions included can be seen in the following table:
 |POST |	`/books/v1` |	Add new book  |
 |GET  |	`/books/v1/{book}`  |	Retrieves book by title along with secret |
 
-#### Create Database
+### Create Database
 
 ### Display Users
 
