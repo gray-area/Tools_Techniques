@@ -35,7 +35,7 @@ Cache-Control: no-cache
 Content-Length: 0
 ```
 
-### Display User Details
+### Display Details for ALL Users
 
 ### Register New User
 
