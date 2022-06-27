@@ -35,6 +35,7 @@ RESPONSE
 { "message": "Database populated." }
 ```
 
+
 ## Display Users
 
 To display the users from the API, use Zap and manually edit the request. The request would look like the one below with the exception of `192.168.1.xxx` being the IP address of 
