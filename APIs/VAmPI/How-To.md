@@ -20,6 +20,15 @@ A quick rundown of the actions included can be seen in the following table:
 
 ### Create Database
 
+``` html
+GET /createdb HTTP/1.1
+Host: 192.168.1.xxx:5000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:92.0) Gecko/20100101 Firefox/92.0
+Pragma: no-cache
+Cache-Control: no-cache
+Content-Length: 0
+```
+
 ### Display Users
 
 To display the users from the API, use Zap and manually edit the request. The request would look like the one below with the exception of `192.168.1.xxx` being the IP address of 
