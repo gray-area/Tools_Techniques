@@ -1,4 +1,4 @@
-## How to attack the API
+# How to attack the VAmPI API
 
 A quick rundown of the actions included can be seen in the following table:
 
@@ -18,8 +18,9 @@ A quick rundown of the actions included can be seen in the following table:
 |POST |	`/books/v1` |	Add new book  |
 |GET  |	`/books/v1/{book}`  |	Retrieves book by title along with secret |
 
-### Create Database
+## Create Database
 
+REQUEST
 ``` html
 GET /createdb HTTP/1.1
 Host: 192.168.1.xxx:5000
@@ -29,7 +30,12 @@ Cache-Control: no-cache
 Content-Length: 0
 ```
 
-### Display Users
+RESPONSE
+```html
+{ "message": "Database populated." }
+```
+
+## Display Users
 
 To display the users from the API, use Zap and manually edit the request. The request would look like the one below with the exception of `192.168.1.xxx` being the IP address of 
 your host of the VAmPI API.
@@ -44,22 +50,22 @@ Cache-Control: no-cache
 Content-Length: 0
 ```
 
-### Display Details for ALL Users
+## Display Details for ALL Users
 
-### Register New User
+## Register New User
 
-### Login to VAmPI
+## Login to VAmPI
 
-### Display User by Username
+## Display User by Username
 
-### Delete User by Username
+## Delete User by Username
 
-### Update a User's Email Address
+## Update a User's Email Address
 
-### Update a User's Password
+## Update a User's Password
 
-### Retrieve All "Books"
+## Retrieve All "Books"
 
-### Add new "Book"
+## Add new "Book"
 
-### Retrive "Book" and Secret by Title
+## Retrive "Book" and Secret by Title
