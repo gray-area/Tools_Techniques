@@ -2,7 +2,7 @@
 
 ### Extract the IP and Hostnames from a .gnmap file in the same directory.
 
-```sh
+```shell
 #! /bin/bash
 
 # This script is designed to use nmap's grep output. It creates a list of the IP addresses and Hostnames and places them in a file called ip_hostname.txt
@@ -13,6 +13,7 @@
 
 NMAP_FILE=*.gnmap
 
-egrep -v "^#|Status: Up" $NMAP_FILE
-
+egrep -v "^#|Status: Up" $NMAP_FILE | cut -d')' -f2-3 --complement | \
+  sed s/')'// | \
+cut -d' ' -f1 --complement > ip_hostname.txt
 ```
