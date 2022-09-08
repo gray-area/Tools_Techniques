@@ -1,5 +1,17 @@
 # Nmap .gnmap data extraction techniques
 
+### Initial nmap scan
+
+```bash
+#! /bin/bash
+
+echo "IP address should end in 0, /24 is implied. "
+
+read -p "Enter IP Address: " IP
+
+nmap -sS -O -sV --open ${IP}/24 -oA file/destination/here/${IP}_Enum
+```
+
 ### Extract the IP and Hostnames from a .gnmap file in the same directory.
 
 ```bash
