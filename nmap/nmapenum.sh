@@ -1,5 +1,8 @@
 #! /bin/bash
 
+# This script is used when you are scanning multiple subnets and need to extract data from each scan.
+# Created by gray_area
+
 # Obtaining user input for IP address and Label. Example: 10.1.1.0
 echo "IP address should end in 0, /24 is implied. "
 
@@ -11,6 +14,8 @@ read -p "Enter Label: " LABEL
 
 # Example: 10.1.1.0_Dev/nmap
 host_dir=/path/to/folder/structure/${IP}_${LABEL}/nmap
+
+# Here is where the nmap command is specified. Changes to needed output can be placed here.
 
 nmap -sS -O -sV --open ${IP}/24 -oA $host_dir/${IP}_Enum &
 
