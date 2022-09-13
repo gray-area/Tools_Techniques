@@ -24,7 +24,7 @@ PID=$!
 wait $PID
 
 # Begin parsing functions of the script. The functions are speficially looking for .gnmap files. Two files will be placed in the host_dir location specified above.
-NMAP_FILE=$host_dir.gnmap
+NMAP_FILE=$host_dir/*.gnmap
 
 # This is used to parse through nmap's grep output file. It is formatted with the IP, Number of Ports, Port Status, Protocol/Port# and service in host_ports.txt.
 ## EXAMPLE OUTPUT
@@ -36,7 +36,7 @@ NMAP_FILE=$host_dir.gnmap
 
 egrep -v "#^|Status: Up" $NMAP_FILE | cut -d' ' -f2,4- | \
   sed -n -e 's/Ignored.*//p' | \
-awk '{print "Host: " $1 " Ports: " NF-1; $1=""; for(i=2; i<NF; i++) { a=a" "$i; }; split(a,s,","); for(e in s) { split(s[e],v,"/"); printf "%-8s %s/%-7s %s\n" , v[2], v[3], v[1], v[5]}; a=""}' > host_ports.txt
+awk '{print "Host: " $1 " Ports: " NF-1; $1=""; for(i=2; i<NF; i++) { a=a" "$i; }; split(a,s,","); for(e in s) { split(s[e],v,"/"); printf "%-8s %s/%-7s %s\n" , v[2], v[3], v[1], v[5]}; a=""}' > $host_dir/host_ports.txt
 
 
 # This is designed to use nmap's grep output. It creates a list of the IP addresses and Hostnames and places them in a file called ip_hostname.txt
@@ -45,4 +45,4 @@ awk '{print "Host: " $1 " Ports: " NF-1; $1=""; for(i=2; i<NF; i++) { a=a" "$i; 
 #   10.1.1.5 computer2.domain.local
 egrep -v "^#|Status: Up" $NMAP_FILE | cut -d')' -f2-3 --complement | \
   sed s/')'// | \
-cut -d' ' -f1 --complement > ip_hostname.txt
+cut -d' ' -f1 --complement > $host_dir/ip_hostname.txt
