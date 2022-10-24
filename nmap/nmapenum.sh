@@ -3,11 +3,34 @@
 # This script is used when you are scanning multiple subnets and need to extract data from each scan.
 # Created by gray_area
 
+
+# Add some color to text
+set +x
+}
+function red(){
+    echo -e "\x1B[31m $1 \x1B[0m"
+    if [ ! -z "${2}" ]; then
+    echo -e "\x1B[31m $($2) \x1B[0m"
+    fi
+}
+function blue(){
+    echo -e "\x1B[34m $1 \x1B[0m"
+    if [ ! -z "${2}" ]; then
+    echo -e "\x1B[34m $($2) \x1B[0m"
+    fi
+}
+function purple(){
+    echo -e "\x1B[35m $1 \x1B[0m \c"
+    if [ ! -z "${2}" ]; then
+    echo -e "\x1B[35m $($2) \x1B[0m"
+    fi
+}
+
 # Obtaining user input for IP address and Label. Example: 10.1.1.0
-echo "IP address should end in 0, /24 is implied. "
+red "IP address should end in 0, /24 is implied. "
 
 # The folder structure would look like 10.1.1.0_Dev, so the label would be Dev
-echo "Label should be PRD, Dev or how its folder is labeled after the underscore. "
+purple "Label should be PRD, Dev or how its folder is labeled after the underscore. "
 
 read -p "Enter IP Address: " IP
 read -p "Enter Label: " LABEL
