@@ -11,3 +11,6 @@ Content-Length: 135
 <params></params> 
 </methodCall>
 ```
+
+
+https://nitesculucian.github.io/2019/07/01/exploiting-the-xmlrpc-php-on-all-wordpress-versions/
