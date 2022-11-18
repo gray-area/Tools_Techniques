@@ -2,7 +2,7 @@
 
 I am using a cloud instance to perform the password cracking, so a 15GB file would not work for me. I decided to split the file into equal 3GB files that could be run individually.
 
-``split -d -b 3000000000 --additional-suffix=.txt crackstation.txt crackstation_``
+``split -d -b 1.5G --additional-suffix=.txt crackstation.txt crackstation_``
 
 This created NTH files as shown below:
 
