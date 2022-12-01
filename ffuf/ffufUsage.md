@@ -10,4 +10,4 @@ Use the file created above to fuzz the directory
 
 Fuzz URL with common directory list, show only "200 OK" responses and use color output.
 
-`` ffuf -u https://www.elephant.com/FUZZ -w /usr/share/seclists/Discovery/Web-Content/common.txt -mc 200 -c ``
+`` ffuf -u https://www.SOMESITE.com/FUZZ -w /usr/share/seclists/Discovery/Web-Content/common.txt -mc 200 -c ``
