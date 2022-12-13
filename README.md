@@ -8,95 +8,95 @@ This repository is used for all of the tools and techniques that I have learned 
 ## Command Injection
 Tool Name | Link
 --------- | ----
-commix    | 
+commix    | https://gitlab.com/kalilinux/packages/commix
 
 
 ## DNS
 Tool Name | Link
 --------- | ----
-dig       |
-nslookup  | 
-dnsdumpster |
-dnsrecon  | 
+dig       | https://www.kali.org/tools/bind9/#dig
+nslookup  | https://www.kali.org/tools/bind9/#nslookup
+dnsdumpster | https://dnsdumpster.com/
+dnsrecon  | https://github.com/darkoperator/dnsrecon
 
 
 ## Enumeration
 Tool Name | Link
 --------- | ----
-nmap      |
-Nuclei    |
+nmap      | https://www.kali.org/tools/nmap/
+Nuclei    | https://github.com/projectdiscovery/nuclei
 
 ## Exploitation
 Tool Name | Link
 --------- | ----
-Metasploit  | 
-searchsploit  |
-exploit-db  |
+Metasploit  | https://github.com/rapid7/metasploit-framework
+searchsploit  | https://www.kali.org/tools/exploitdb/#searchsploit
+exploit-db  | https://www.exploit-db.com/
 
 
 ## Forced Browsing / Fuzz
 Tool Name | Link
 --------- | ----
-dirbuster |
-ffuf      |
-BurpSuite |
-ZAP       |
-dirb      |
+dirbuster | https://www.kali.org/tools/dirbuster/
+ffuf      | https://github.com/ffuf/ffuf
+BurpSuite | https://portswigger.net/
+ZAP       | https://github.com/zaproxy/zaproxy
+dirb      | https://www.kali.org/tools/dirb/
 
 ## OSINT
 Tool Name | Link
 --------- | ----
-reconFTW  |
-SpiderFoot  |
-dehashed (paid) |
-breach-parse  |
-Netcraft  |
+reconFTW  | https://github.com/six2dez/reconftw
+SpiderFoot  | https://www.spiderfoot.net/
+dehashed (paid) | https://dehashed.com/
+breach-parse  | https://github.com/hmaverickadams/breach-parse
+Netcraft  | https://www.netcraft.com/
 
 ## Password Guessing
 Tool Name | Link
 --------- | ----
-hydra     |
-JohnTR    |
-spraygen  |
+hydra     | https://github.com/vanhauser-thc/thc-hydra
+JohnTR    | https://github.com/openwall/john
+spraygen  | https://github.com/3ndG4me/spraygen
 
 ## Password Profiling
 Tool Name | Link
 --------- | ----
-cewl      |
-crunch    |
+cewl      | https://github.com/digininja/CeWL
+crunch    | https://www.kali.org/tools/crunch/
 
 
 ## SQL
 Tool Name | Link
 --------- | ----
-sqlmap    |
-BurpSuite |
-ffuf      |
+sqlmap    | https://sqlmap.org/
+BurpSuite | https://portswigger.net/
+ffuf      | https://github.com/ffuf/ffuf
 
 
 ## Vulnerability Scanning
 Tool Name | Link
 --------- | ----
-ZAP       |
-OpenVAS   |
+ZAP       | https://github.com/zaproxy/zaproxy
+OpenVAS   | https://www.kali.org/tools/gvm/#openvas
 
 
 ## WAF Detection
 Tool Name | Link
 --------- | ----
-wafw00f   |
+wafw00f   | https://github.com/EnableSecurity/wafw00f
 
 
 ## WordPress
 Tool Name | Link
 --------- | ----
-wpscan    |
-wpxploit  |
+wpscan    | https://github.com/wpscanteam/wpscan
+wpxploit  | https://github.com/relarizky/wpxploit
 wp-multi-bruteforce |
 
 
 # XSS
 Tool Name | Link
 --------- | ----
-findom-xss  |
-xsser     |
+findom-xss  | https://github.com/dwisiswant0/findom-xss
+xsser     | https://xsser.03c8.net/
