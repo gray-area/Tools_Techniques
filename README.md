@@ -62,6 +62,7 @@ spraygen  | https://github.com/3ndG4me/spraygen
 ## Password Profiling
 Tool Name | Link
 --------- | ----
+pwgen     |
 cewl      | https://github.com/digininja/CeWL
 crunch    | https://www.kali.org/tools/crunch/
 
