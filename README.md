@@ -101,3 +101,9 @@ Tool Name | Link
 --------- | ----
 findom-xss  | https://github.com/dwisiswant0/findom-xss
 xsser     | https://xsser.03c8.net/
+
+
+# XML Encoding/Decoding
+Tool Name | Link
+--------- | ----
+xml-encoding  | http://xml-encoding.online-domain-tools.com/
