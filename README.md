@@ -66,6 +66,10 @@ pwgen     |
 cewl      | https://github.com/digininja/CeWL
 crunch    | https://www.kali.org/tools/crunch/
 
+## Payloads
+Tool Name | Link
+--------- | ----
+PayLoadsAllTheThings  | https://github.com/swisskyrepo/PayloadsAllTheThings
 
 ## SQL
 Tool Name | Link
