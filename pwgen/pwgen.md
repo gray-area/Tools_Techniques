@@ -1,5 +1,8 @@
 # pwgen Usage
 
+
+## WordPress Passwords
+
 Create 700 WordPress style passwords
 
 ``pwgen -cnysC 24 700 > wordpress.txt``
