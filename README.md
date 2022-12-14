@@ -91,6 +91,10 @@ Tool Name | Link
 --------- | ----
 wafw00f   | https://github.com/EnableSecurity/wafw00f
 
+## Wiki
+Tool Name | Link
+--------- | ----
+hacktricks  | https://book.hacktricks.xyz/welcome/readme
 
 ## WordPress
 Tool Name | Link
