@@ -93,7 +93,7 @@ Tool Name | Link
 --------- | ----
 wpscan    | https://github.com/wpscanteam/wpscan
 wpxploit  | https://github.com/relarizky/wpxploit
-wp-multi-bruteforce |
+wp-multi-bruteforce | https://github.com/entr0pie/wp-multi-bruteforce
 
 
 # XSS
