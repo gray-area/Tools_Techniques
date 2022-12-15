@@ -13,7 +13,7 @@ This creates passwords with the following criteria:
   * ``-n`` : Include at least one number
   * ``-y`` : Include at least one special symbol
   * ``-s`` : Generate passwords randomly
-  * ``-C`` : Print the passwords in a column
+  * ``-1`` : Do not print the passwords in a column (1 entry per line)
   * ``24`` : Make the passwords 24 characters in length
   * ``700`` : Create a total of 700 random passwords
   * ``> wordpress.txt`` : Place all passwords in a file called wordpress.txt
