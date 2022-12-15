@@ -5,7 +5,7 @@
 
 Create 700 WordPress style passwords
 
-``pwgen -cnysC 24 700 > wordpress.txt``
+``pwgen -cnys1 24 700 > wordpress.txt``  (NOTE: the -1 option is the number one, not a lowercase L )
 
 This creates passwords with the following criteria:
 
