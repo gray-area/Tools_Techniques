@@ -24,3 +24,18 @@
 * wp-signup.php
 * wp-trackback.php
 * xmlrpc.php
+* robots.txt
+* favicon.ico
+
+## Wordpress Config Files
+Filename  | Location  | Use
+--------  | --------  | ---
+.htaccess | root (/)  | A server configuration file, WordPress uses it to manage permalinks and redirects.
+wp-config.php | root (/)  | Tells WordPress how to connect to your database. It sets some global settings for the WordPress site
+
+## WordPress wp-content
+* themes
+* plugins
+* uploads
+
+
