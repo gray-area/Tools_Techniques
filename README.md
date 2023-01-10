@@ -25,6 +25,7 @@ Tool Name | Link
 --------- | ----
 nmap      | https://www.kali.org/tools/nmap/
 Nuclei    | https://github.com/projectdiscovery/nuclei
+CloudHunter | https://github.com/belane/CloudHunter
 
 ## Exploitation
 Tool Name | Link
