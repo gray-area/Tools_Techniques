@@ -18,7 +18,7 @@
 
 1. Sublist3r
 2. crt.sh (Certificate Fingerprinting)
-3. OWASP Amass
+3. OWASP Amass (https://github.com/OWASP/Amass/blob/master/doc/user_guide.md)
 4. tomnomnom http probe
 
 # Cloud Recon
