@@ -11,6 +11,15 @@
 
 1. Breach Parse
 2. DeHashed
+3. hashes.org/search
+4. Google the hash
+
+# Subdomains
+
+1. Sublist3r
+2. crt.sh (Certificate Fingerprinting)
+3. OWASP Amass
+4. tomnomnom http probe
 
 # Cloud Recon
 
