@@ -9,3 +9,6 @@ Potatoes | https://jlajara.gitlab.io/others/2020/11/22/Potatoes_Windows_Privesc.
 Decoder's Blog | https://decoder.cloud/
 Token Kidnapping | https://dl.packetstormsecurity.net/papers/presentations/TokenKidnapping.pdf
 Hacktricks - Windows Local Privilege Escalation  | https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation
+WinPEAS | https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS
+PrivescCheck  | https://github.com/itm4n/PrivescCheck
+WES-NG  | https://github.com/bitsadmin/wesng
