@@ -1,6 +1,6 @@
 #! /bin/bash
 
-$url=$1
+url=$1
 if [ ! -d "$url" ];then
   mkdir $url
 fi
