@@ -16,6 +16,7 @@
 #   Amass
 #   subjack
 #   nmap
+#   waybackurls
 
 figlet AutoPen v.1
 
