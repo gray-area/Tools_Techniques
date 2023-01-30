@@ -1,6 +1,13 @@
 #! /bin/bash
 
 # Script taken from Heath Adams PNPT
+# Added color to terminal output for better process tracking. @gray-area
+# Fixed formatting for each echo output. @gray-area
+# Fixed issued with Amass and Assetfinder. @gray-area
+# Changed from Eyewitness to GoWitness. @gray-area
+# Added Figlet banner and names it AutoPen, although its far from it right now. @gray-area
+# Added Commentary print to screen fro Domain format requirements. @gray-area
+# Added Domain entry from terminal as a prompt. @gray-area
 # Script requires the following to be installed:
 #   go
 #   gowitness
@@ -76,8 +83,6 @@ fi
  
 purple "[+] Harvesting subdomains with assetfinder..." echo
 assetfinder $url >> $url/recon/final.txt
-#cat $url/recon/assets.txt | grep $1 >> $url/recon/final.txt
-#rm $url/recon/assets.txt
  
 purple "[+] Double checking for subdomains with amass..." echo
 amass enum -d $url >> $url/recon/f.txt
