@@ -12,7 +12,7 @@
 
 # Adding color to output
 set +x
-}
+
 function red(){
     echo -e "\x1B[31m $1 \x1B[0m"
     if [ ! -z "${2}" ]; then
