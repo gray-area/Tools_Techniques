@@ -28,6 +28,11 @@ Nuclei    | https://github.com/projectdiscovery/nuclei
 CloudHunter | https://github.com/belane/CloudHunter
 wappalyzer | https://www.wappalyzer.com/
 whatweb   | https://www.kali.org/tools/whatweb/
+asseetfinder  | 
+Amass |
+httprobe  |
+gowitness |
+
 
 ## Exploitation
 Tool Name | Link
