@@ -23,12 +23,15 @@ Changes:
   [+] Added red for format echo string
   [+] Fixed formatting for lines when echo called
   [+] Fixed formatting assetfinder output to file
+  [+] Added python http server for gowitness images
+  [+] Added launch firefox to python server for image viewing
+  [+] Added a prompt to view images. If no, close python server
   
   
   [-] Removed Eyewitness
 
+
 To Do:
-  [+] Add python http server for gowitness images
-  [+] Launch firefox to python server for image viewing
-  [+] Add a prompt to view images. If no, close python server?
   [+] Directory and go installation checks. If installed/created skip.
+  
+  
