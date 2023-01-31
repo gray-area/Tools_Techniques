@@ -74,6 +74,9 @@ fi
 if [ ! -d "$url/recon/wayback" ];then
 	mkdir $url/recon/wayback
 fi
+if [ ! -d "$url/recon/dnsrecon" ];then
+	mkdir $url/recon/dnsrecon
+fi
 if [ ! -d "$url/recon/wayback/params" ];then
 	mkdir $url/recon/wayback/params
 fi
@@ -152,6 +155,8 @@ rm $url/recon/wayback/extensions/aspx1.txt
 
 purple "[+] Running gowitness against all compiled domains..."
 gowitness file $url/recon/httprobe/alive.txt -P $url/recon/gowitness --delay 3
+
+dnsrecon -d $url -t zonwalk,crt,axfr > $url/recon/dnsrecon/dnsrecon.txt
 
 yserv='python3 -m http.server 4040'
 
