@@ -1,3 +1,4 @@
+ ```
   ______             __              _______                    
  /      \           |  \            |       \                   
 |  ▓▓▓▓▓▓\__    __ _| ▓▓_    ______ | ▓▓▓▓▓▓▓\ ______  _______  
@@ -7,37 +8,38 @@
 | ▓▓  | ▓▓ ▓▓__/ ▓▓ | ▓▓|  \ ▓▓__/ ▓▓ ▓▓     | ▓▓▓▓▓▓▓▓ ▓▓  | ▓▓
 | ▓▓  | ▓▓\▓▓    ▓▓  \▓▓  ▓▓\▓▓    ▓▓ ▓▓      \▓▓     \ ▓▓  | ▓▓
  \▓▓   \▓▓ \▓▓▓▓▓▓    \▓▓▓▓  \▓▓▓▓▓▓ \▓▓       \▓▓▓▓▓▓▓\▓▓   \▓▓
-                                                                
+ ```                                                             
 
 This is a script that is a work in progress. It was originally inspired and copied from Heath Adams' PNPT course, which was borrowed from @thatonetester/sumrecon.
 More tools will be added over time, in order to automate some of the pentest processes that I conduct. 
 
-Changes:
-  [+] Added color to echo output
-  [+] Added installation of go dependencies
-  [+] Added gowitness
-  [+] Added prompt for URL
-  [+] Added Format message for URL input
-  [+] Added blue for go installs
-  [+] Added purple for action echo
-  [+] Added red for format echo string
-  [+] Fixed formatting for lines when echo called
-  [+] Fixed formatting assetfinder output to file
-  [+] Added python http server for gowitness images
-  [+] Added launch firefox to python server for image viewing
-  [+] Added a prompt to view images. If no, close python server
-  [+] Added dnsrecon
-  [+] Added whatweb
-  [+] Added nikto
+## Changes:
+-  [x] Added color to echo output
+-  [x] Added installation of go dependencies
+-  [x] Added gowitness
+-  [x] Added prompt for URL
+-  [x] Added Format message for URL input
+-  [x] Added blue for go installs
+-  [x] Added purple for action echo
+-  [x] Added red for format echo string
+-  [x] Fixed formatting for lines when echo called
+-  [x] Fixed formatting assetfinder output to file
+-  [x] Added python http server for gowitness images
+-  [x] Added launch firefox to python server for image viewing
+-  [x] Added a prompt to view images. If no, close python server
+-  [x] Added dnsrecon
+-  [x] Added whatweb
+-  [x] Added nikto
+
   
-  [-] Removed Eyewitness
+-  [x] Removed Eyewitness
 
 
-To Do:
-  [+] Directory and go installation checks. If installed/created skip.
-  [+] Add prompt for WPScan if WordPress? (mkdir $url/WPScan)
-  [+] Add wappalyzer
-  [+] Add CMSmap
-  [+] Add wapiti
+## To Do:
+-  [ ] Directory and go installation checks. If installed/created skip.
+-  [ ] Add prompt for WPScan if WordPress? (mkdir $url/WPScan)
+-  [ ] Add wappalyzer
+-  [ ] Add CMSmap
+-  [ ] Add wapiti
   
   
