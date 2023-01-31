@@ -27,3 +27,8 @@ Changes:
   
   [-] Removed Eyewitness
 
+To Do:
+  [+] Add python http server for gowitness images
+  [+] Launch firefox to python server for image viewing
+  [+] Add a prompt to view images. If no, close python server?
+  [+] Directory and go installation checks. If installed/created skip.
