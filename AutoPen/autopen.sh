@@ -80,8 +80,11 @@ fi
 if [ ! -d "$url/recon/dnsrecon" ];then
 	mkdir $url/recon/dnsrecon
 fi
-if [ ! -d "$url/recon/whatweb" ];then
+if [ ! -d "$url/enumeration/whatweb" ];then
 	mkdir $url/enumration/whatweb
+fi
+if [ ! -d "$url/enumeration/nikto" ];then
+	mkdir $url/enumration/nikto
 fi
 if [ ! -d "$url/recon/wayback/params" ];then
 	mkdir $url/recon/wayback/params
@@ -164,6 +167,8 @@ dnsrecon -d $url -t zonewalk,crt,axfr > $url/recon/dnsrecon/dnsrecon.txt
 
 purple "[+] Running whatweb..." echo
 whatweb www.$url > $url/enumeration/whatweb/whatweb.txt
+
+cat relax echo
 
 purple "[+] Running nikto..." echo
 nikto -h www.$url > $url/enumeration/nikto/nikto.txt
