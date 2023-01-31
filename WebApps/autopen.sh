@@ -1,5 +1,6 @@
 #! /bin/bash
 
+# To check your $GOPATH, enter "go env" into terminal.
 # Script taken from Heath Adams PNPT
 # Script requires the following to be installed:
 #   go
