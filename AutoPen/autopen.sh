@@ -153,10 +153,11 @@ rm $url/recon/wayback/extensions/json1.txt
 rm $url/recon/wayback/extensions/php1.txt
 rm $url/recon/wayback/extensions/aspx1.txt
 
-purple "[+] Running gowitness against all compiled domains..."
-gowitness file $url/recon/httprobe/alive.txt -P $url/recon/gowitness --delay 3
+purple "[+] Running dnsrecon w/ zonewalk,crt and axfr..." echo
+dnsrecon -d $url -t zonewalk,crt,axfr > $url/recon/dnsrecon/dnsrecon.txt
 
-dnsrecon -d $url -t zonwalk,crt,axfr > $url/recon/dnsrecon/dnsrecon.txt
+purple "[+] Running gowitness against all compiled domains..." echo
+gowitness file $url/recon/httprobe/alive.txt -P $url/recon/gowitness --delay 3
 
 yserv='python3 -m http.server 4040'
 
