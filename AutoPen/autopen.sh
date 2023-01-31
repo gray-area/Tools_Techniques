@@ -59,8 +59,11 @@ fi
 if [ ! -d "$url/recon" ];then
 	mkdir $url/recon
 fi
+if [ ! -d "$url/enumeration" ];then
+	mkdir $url/enumeration
+fi
 if [ ! -d '$url/recon/gowitness' ];then
-  mkdir $url/recon/gowitness
+  	mkdir $url/recon/gowitness
 fi
 if [ ! -d "$url/recon/scans" ];then
 	mkdir $url/recon/scans
@@ -78,7 +81,7 @@ if [ ! -d "$url/recon/dnsrecon" ];then
 	mkdir $url/recon/dnsrecon
 fi
 if [ ! -d "$url/recon/whatweb" ];then
-	mkdir $url/recon/whatweb
+	mkdir $url/enumration/whatweb
 fi
 if [ ! -d "$url/recon/wayback/params" ];then
 	mkdir $url/recon/wayback/params
@@ -160,7 +163,10 @@ purple "[+] Running dnsrecon w/ zonewalk,crt and axfr..." echo
 dnsrecon -d $url -t zonewalk,crt,axfr > $url/recon/dnsrecon/dnsrecon.txt
 
 purple "[+] Running whatweb..." echo
-whatweb www.$url > $url/recon/whatweb/whatweb.txt
+whatweb www.$url > $url/enumeration/whatweb/whatweb.txt
+
+purple "[+] Running nikto..." echo
+nikto -h www.$url > $url/enumeration/nikto/nikto.txt
 
 purple "[+] Running gowitness against all compiled domains..." echo
 gowitness file $url/recon/httprobe/alive.txt -P $url/recon/gowitness --delay 3
