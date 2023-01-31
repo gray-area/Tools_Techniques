@@ -89,8 +89,6 @@ fi
  
 purple "[+] Harvesting subdomains with assetfinder..." echo
 assetfinder $url >> $url/recon/final.txt
-#cat $url/recon/assets.txt | grep $1 >> $url/recon/final.txt
-#rm $url/recon/assets.txt
  
 purple "[+] Double checking for subdomains with amass..." echo
 amass enum -d $url >> $url/recon/f.txt
