@@ -38,5 +38,6 @@ To Do:
   [+] Add prompt for WPScan if WordPress? (mkdir $url/WPScan)
   [+] Add wappalyzer
   [+] Add CMSmap
+  [+] Add wapiti
   
   
