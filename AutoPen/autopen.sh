@@ -119,7 +119,7 @@ purple "[+] Pulling and compiling all possible params found in wayback data..." 
 cat $url/recon/wayback/wayback_output.txt | grep '?*=' | cut -d '=' -f 1 | sort -u >> $url/recon/wayback/params/wayback_params.txt
 for line in $(cat $url/recon/wayback/params/wayback_params.txt);do echo $line'=';done
  
-purple "[+] Pulling and compiling js/php/aspx/jsp/json files from wayback output..." 
+purple "[+] Pulling and compiling js/php/aspx/jsp/json files from wayback output..." echo
 for line in $(cat $url/recon/wayback/wayback_output.txt);do
 	ext="${line##*.}"
 	if [[ "$ext" == "js" ]]; then
@@ -151,4 +151,4 @@ rm $url/recon/wayback/extensions/php1.txt
 rm $url/recon/wayback/extensions/aspx1.txt
 
 purple "[+] Running gowitness against all compiled domains..."
-gowitness -f $url/recon/httprobe/alive.txt -P $url/recon/gowitness --delay 3
+gowitness file $url/recon/httprobe/alive.txt -P $url/recon/gowitness --delay 3
