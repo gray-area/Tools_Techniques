@@ -11,3 +11,18 @@
 
 This is a script that is a work in progress. It was originally inspired and copied from Heath Adams' PNPT course.
 More tools will be added over time, in order to automate some of the pentest processes that I conduct. 
+
+Changes:
+  [+] Added color to echo output
+  [+] Added installation of go dependencies
+  [+] Added gowitness
+  [+] Added prompt for URL
+  [+] Added Format message for URL input
+  [+] Added blue for go installs
+  [+] Added purple for action echo
+  [+] Added red for format echo string
+  [+] Fixed formatting for lines when echo called
+  [+] Fixed formatting assetfinder output to file
+  
+  
+  [-] Removed Eyewitness
