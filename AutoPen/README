@@ -27,7 +27,8 @@ Changes:
   [+] Added launch firefox to python server for image viewing
   [+] Added a prompt to view images. If no, close python server
   [+] Added dnsrecon
-  
+  [+] Added whatweb
+  [+] Added nikto
   
   [-] Removed Eyewitness
 
@@ -35,5 +36,7 @@ Changes:
 To Do:
   [+] Directory and go installation checks. If installed/created skip.
   [+] Add prompt for WPScan if WordPress? (mkdir $url/WPScan)
+  [+] Add wappalyzer
+  [+] Add CMSmap
   
   
