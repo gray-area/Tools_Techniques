@@ -99,10 +99,13 @@ Tool Name | Link
 --------- | ----
 wafw00f   | https://github.com/EnableSecurity/wafw00f
 
-## Wiki
+## Wikis / Info
 Tool Name | Link
 --------- | ----
 hacktricks  | https://book.hacktricks.xyz/welcome/readme
+pentest-playbook | https://github.com/stnv/pentest-playbook/blob/master/Web/Chrome%20Devtools.md
+pentest book | https://pentestbook.six2dez.com/
+
 
 ## WordPress
 Tool Name | Link
