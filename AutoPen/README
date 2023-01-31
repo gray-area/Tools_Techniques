@@ -26,6 +26,7 @@ Changes:
   [+] Added python http server for gowitness images
   [+] Added launch firefox to python server for image viewing
   [+] Added a prompt to view images. If no, close python server
+  [+] Added dnsrecon
   
   
   [-] Removed Eyewitness
