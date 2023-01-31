@@ -1,13 +1,6 @@
 #! /bin/bash
 
 # Script taken from Heath Adams PNPT
-# Added color to terminal output for better process tracking. @gray-area
-# Fixed formatting for each echo output. @gray-area
-# Fixed issued with Amass and Assetfinder. @gray-area
-# Changed from Eyewitness to GoWitness. @gray-area
-# Added Figlet banner and names it AutoPen, although its far from it right now. @gray-area
-# Added Commentary print to screen fro Domain format requirements. @gray-area
-# Added Domain entry from terminal as a prompt. @gray-area
 # Script requires the following to be installed:
 #   go
 #   gowitness
@@ -16,7 +9,6 @@
 #   Amass
 #   subjack
 #   nmap
-#   waybackurls
 
 figlet AutoPen v.1
 
@@ -42,7 +34,19 @@ function purple(){
     fi
 }
 
-w=www
+blue "[+] Installing gowitness..."
+go install github.com/sensepost/gowitness@latest
+blue "[+] Installing httprobe..."
+go install github.com/tomnomnom/httprobe@latest
+blue "[+] Installing assetfinder..."
+go install github.com/tomnomnom/assetfinder@latest
+blue "[+] Installing amass..."
+go install github.com/OWASP/Amass/v3/...@latest
+blue "[+] Installing subjack..."
+go install github.com/haccer/subjack@latest
+
+sudo cp -r /home/$USER/go/bin/* /usr/sbin
+
 
 red "Enter Domain in format: domain.com. Do not place www before."
 
@@ -84,6 +88,8 @@ fi
  
 purple "[+] Harvesting subdomains with assetfinder..." echo
 assetfinder $url >> $url/recon/final.txt
+#cat $url/recon/assets.txt | grep $1 >> $url/recon/final.txt
+#rm $url/recon/assets.txt
  
 purple "[+] Double checking for subdomains with amass..." echo
 amass enum -d $url >> $url/recon/f.txt
@@ -145,5 +151,5 @@ rm $url/recon/wayback/extensions/json1.txt
 rm $url/recon/wayback/extensions/php1.txt
 rm $url/recon/wayback/extensions/aspx1.txt
 
-#purple "[+] Running gowitness against all compiled domains..."
-#gowitness -f $url/recon/httprobe/alive.txt -P $url/recon/gowitness --delay 3
+purple "[+] Running gowitness against all compiled domains..."
+gowitness -f $url/recon/httprobe/alive.txt -P $url/recon/gowitness --delay 3
