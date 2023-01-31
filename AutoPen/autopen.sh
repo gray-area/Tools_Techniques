@@ -152,3 +152,24 @@ rm $url/recon/wayback/extensions/aspx1.txt
 
 purple "[+] Running gowitness against all compiled domains..."
 gowitness file $url/recon/httprobe/alive.txt -P $url/recon/gowitness --delay 3
+
+yserv='python3 -m http.server 4040'
+
+red "Would you like to view images? (yes or no) "
+read yesorno
+
+if [ "$yesorno" == yes ]; then
+        cd $url/recon/gowitness
+        firefox http://localhost:4040
+        $yserv
+
+elif [ "$yesorno" == no ]; then
+        exit 1
+
+else
+        red "Not a valid answer."
+        exit 1
+
+fi
+
+
