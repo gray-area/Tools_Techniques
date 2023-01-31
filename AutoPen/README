@@ -34,5 +34,6 @@ Changes:
 
 To Do:
   [+] Directory and go installation checks. If installed/created skip.
+  [+] Add prompt for WPScan if WordPress? (mkdir $url/WPScan)
   
   
