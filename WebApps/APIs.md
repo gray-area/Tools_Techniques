@@ -1,6 +1,8 @@
 # Notes taken from APISec University
 
-## Passive
+## API Recon
+
+### Passive
 
 * Google Dorking
     * Search Google for "Domain api"
@@ -24,4 +26,4 @@
  * Wayback Machine
     * search: "exact URL" > year > day > click link
 
-## Active
+### Active
