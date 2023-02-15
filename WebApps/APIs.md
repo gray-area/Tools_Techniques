@@ -43,4 +43,3 @@
    * ``amass enum -active -brute -w /usr/share/wordlists/API_superlist -d {domain} -dir [directory name]``
 * Kitrunner
 * GoBuster
-* 
