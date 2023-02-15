@@ -41,5 +41,17 @@
    * ``amass enum -passive -d {domain}``
    * ``amass enum -active -d {domain}``
    * ``amass enum -active -brute -w /usr/share/wordlists/API_superlist -d {domain} -dir [directory name]``
-* Kitrunner
+* Kiterunner
 * GoBuster
+
+
+## Endpoint Analysis
+
+* mitmweb / mitmproxy
+   * Save prooxied traffic from web interface
+* mitm2swagger
+   * sudo mitmproxy2swagger -i /Downloads/flows -o spec.yml -p http://{API} -f flow
+   * edit spec.yml file and remove "ignore:" from entries you want included
+   * sudo mitmproxy2swagger -i /Downloads/flows -o spec.yml -p http://{API} -f flow --examples
+* Postman
+   * Import spec.yml file
