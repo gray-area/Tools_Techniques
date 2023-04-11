@@ -55,3 +55,20 @@
    * sudo mitmproxy2swagger -i /Downloads/flows -o spec.yml -p http://{API} -f flow --examples
 * Postman
    * Import spec.yml file
+
+
+## Authentication Attacks
+
+* Password Spraying
+   * Find password policy and narrow down list
+   * Use intercept, not proxy to get data structure
+* Password Brute Forcing
+   * Mentalist - sc0tfree GitHub
+   * Cupp - Mebus GitHub
+* Fuzzing
+   * wfuzz
+* Password Lists
+   * Use Season+Year+Symbol (Summer2023!, Spring2022?, etc...)
+   * Use Month+Day+Year+Symbol (January212017!, July42022!, etc...)
+   * Use Name@Year+symbol (Twitter@2022, Dorsey@2022, etc...)
+   * Use Initials+Year+Symbol (JPD1976!, etc...)
