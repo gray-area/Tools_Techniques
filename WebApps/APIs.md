@@ -15,7 +15,10 @@
 * Improper Assets Management
 * Business Logic Flaws
 
-## API Recon
+
+## Methodology
+
+### API Recon
 
 ### Passive
 
