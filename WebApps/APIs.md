@@ -1,6 +1,20 @@
 
 # Notes taken from APISec University
 
+## Tests to Perform
+
+* Information Disclosure
+* Broken Object-Level Authorization (BOLA)
+* Broken User Authentication
+* Excessive Data Exposure
+* Lack of Resources / Rate Limiting
+* Broken Function Level Authorization
+* Mass Assignment
+* Security Misconfiguration
+* Injections
+* Improper Assets Management
+* Business Logic Flaws
+
 ## API Recon
 
 ### Passive
